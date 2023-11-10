@@ -1,0 +1,92 @@
+/* Tất cả mã CSS cũ giữ nguyên */
+/* reset css về mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f5f5;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    /* Để định vị nút "Home" */
+}
+
+.home {
+    text-decoration: none;
+    background-color: #4a8e78;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+    /* Định vị nút "Home" */
+    top: 10px;
+    left: 10px;
+    transition: background-color 0.3s;
+    /* Hiệu ứng hover cho nút "Home" */
+}
+
+.home:hover {
+    background-color: #3c725d;
+}
+
+/* Thêm CSS cho phần table_container */
+.table_container {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    /* Bảng rộng bằng chiều ngang của trang web */
+    overflow: auto;
+    /* Thêm thanh cuộn nếu bảng quá rộng */
+}
+
+/* Thêm CSS cho tiêu đề bảng (title) */
+.title {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+/* Sửa đổi mã CSS cho bảng */
+table {
+    border-collapse: separate;
+    /* Tạo khoảng cách giữa các ô */
+    border-spacing: 0 10px;
+    /* Đặt khoảng cách giữa các dòng */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    /* Bảng rộng bằng chiều ngang của trang web */
+}
+
+/* Sửa đổi mã CSS cho các ô và dòng trong bảng */
+th,
+td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    transition: transform 0.2s;
+    /* Hiệu ứng khi di chuột vào từng dòng */
+}
+
+/* Sửa đổi mã CSS cho ô tiêu đề */
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Hiệu ứng màu nền khi di chuột vào từng dòng */
+tr:hover {
+    transform: scale(1.02);
+}
+
+/* Thêm hiệu ứng màu xanh khi di chuột vào ô */
+tr:hover {
+    background-color: #a7ddad;
+    color: white;
+}

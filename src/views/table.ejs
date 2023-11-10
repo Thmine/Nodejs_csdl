@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Table</title>
+    <meta charset="utf-8" />
+    <!-- Embed fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/table/table.css">
+</head>
+
+<body>
+    <a href="/home" class="home">Home</a>
+    <div class="table_container">
+        <div class="title">List user</div>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>User Name</th>
+                <th>role</th>
+                <th>Action</th>
+            </tr>
+            <% for (let i=0; i < listaccounts.length; i++) { %>
+                <tr>
+                    <td>
+                        <%=listaccounts[i].id %>
+                    </td>
+                    <td>
+                        <%=listaccounts[i].username %>
+                    </td>
+                    <td>
+                        <%=listaccounts[i].role %>
+                    </td>
+
+                    <td>
+                        <a href="/update/<%=listaccounts[i].id %>" style=" background-color: #4CAF50;
+                        color: white;
+                        padding: 5px 10px; 
+                        margin-right:10px ;">Edit</a>
+
+                        <form action="/delete_user/<%=listaccounts[i].id %>" method="POST"
+                            style=" display: inline-block;">
+                            <button>Delete</button>
+
+                        </form>
+                    </td>
+                </tr>
+                <% } %>
+
+
+        </table>
+    </div>
+</body>
+
+</html>

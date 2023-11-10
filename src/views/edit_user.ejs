@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!------------ Embed fonts ------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <!------------ Styles ------------>
+    <link rel="stylesheet" href="/assets/sign_in/sign_in.css" />
+    <title>Update</title>
+
+
+</head>
+
+<body>
+    <!-- <%=JSON.stringify(useredit)%> -->
+    <a href="/home">Home</a>
+    <!------------ Form layout ------------>
+    <div class="form-container">
+        <form action="/update_user" class="form" method="post">
+            <h1 style="font-style: oblique;">Update a User</h1>
+            <div class="dnone">
+                <label class="label">ID:</label>
+                <input class="input" type="text" name="ID" value="<%=useredit.id %>" />
+            </div>
+            <div class="row">
+                <label class="label">username</label>
+                <input class="input" type="text" name="username" value="<%=useredit.username %>" />
+            </div>
+            <div class="row">
+                <label class="label">Password</label>
+                <input class="input" type="text" name="password" value="<%=useredit.password %>" />
+            </div>
+
+            <div class="row">
+                <label class="label">role</label>
+                <input class="input" type="text" name="role" value="<%=useredit.role %>" />
+            </div>
+            <div>
+                <button class="button">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

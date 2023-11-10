@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    background-color: #bbe4ee;
+    display: flex;
+    flex-direction: column;
+    /* Đổi chiều của container */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* Sử dụng min-height để đảm bảo nút Home không bị che khuất */
+    position: relative;
+    /* Sử dụng relative để định vị nút Home */
+}
+
+a {
+    position: absolute;
+    top: 10px;
+    /* Điều chỉnh khoảng cách từ top */
+    left: 10px;
+    /* Điều chỉnh khoảng cách từ left */
+    text-align: left;
+    text-decoration: none;
+    background-color: #4a8e78;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.form-container {
+    max-width: 400px;
+    width: 100%;
+    margin: 20px;
+    padding: 32px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-container .row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.form-container .label {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-container .input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.2s;
+}
+
+.form-container .input:focus {
+    outline: none;
+    border-color: #0093e9;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a048;
+}
+
+.dnone {
+    display: none;
+}
